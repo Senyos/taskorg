@@ -35,7 +35,7 @@ class TaskManage():
                                })
 
         else:
-            return print("Error: there's no such a subject.")
+            print("Error: there's no such a subject.")
 
     def get_all_tasks(self) -> list[dict, ...]:
         return self._tasks
@@ -48,5 +48,5 @@ class TaskManage():
             print("There's no tasks already.")
 
     def clear_tasks(self) -> None:
-        """Erase all the tasks in list"""
+        """Erase all the tasks in the list"""
         self._tasks.clear()

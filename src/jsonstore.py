@@ -5,7 +5,7 @@ class JSONStore():
     """Class with various functions to do
     different manipulation with json files.
     """
-    def __init__(self, file: str):
+    def __init__(self, file: str) -> None:
         """Init with `file' argument given. 
         `file' needs to be `str' //path//to//file.
         

@@ -1,7 +1,7 @@
-from jsonstore import JSONStore
-from taskmanage import TaskManage
+from backend.jsonstore import JSONStore
+from backend.taskmanage import TaskManage
 
-JStore = JSONStore("../jsons/tasks.json")
+JStore = JSONStore("jsons/tasks.json")
 TManage = TaskManage()
 
 

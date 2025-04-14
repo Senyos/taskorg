@@ -1,4 +1,5 @@
 import json
+from typing import List
 
 
 class JSONStore():
@@ -12,7 +13,9 @@ class JSONStore():
         """
         self._file = file
 
-    def read_json(self) -> list[dict, ...]:
+        return None
+
+    def read_json(self) -> List[dict, ...]:
         """Reading json `file' given and
         returns json.load() -- `list' of `dicts':
         list[dict, ...]."""
@@ -21,7 +24,7 @@ class JSONStore():
             return json.load(_f)
 
     def write_json(self, 
-                   new_data: list[dict, ...]) -> None:
+                   new_data: List[dict, ...]) -> None:
         """Writes given `new_data' list[dict, ...] 
         to `file' with replacing everything
         that was in file before. Returns None.
@@ -29,3 +32,4 @@ class JSONStore():
         with open(self._file, "w", 
                   encoding="utf-8") as _f:
             json.dump(new_data, _f)
+        return None

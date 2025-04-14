@@ -1,3 +1,9 @@
+# Example [RU]
+
+## Пример использования
+
+```py
+# Создается список заданий случайным образом, а затем фильтруется по значению даты, после чего удаляются задания, совпадающие с указанной датой.
 from backend.jsonstore import JSONStore
 from backend.taskmanage import TaskManage
 from random import randint
@@ -38,3 +44,4 @@ if __name__ == "__main__":
     json_data = TManage.get_all_tasks()
 
     pprint(json_data)
+```

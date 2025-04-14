@@ -1,3 +1,8 @@
+## Languages of README
+
+- [English](https://github.com/Senyos/taskorg/blob/master/README.md)
+- [Russian](https://github.com/Senyos/taskorg/blob/master/README.ru.md)
+
 # taskorg
 
 ## Коротко о программе

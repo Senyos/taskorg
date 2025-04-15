@@ -152,7 +152,7 @@ indexes = (0, 1, -1)
 data = TManage.get_tasks_by_indexes()
 ```
 
-*До (содержимое `списка заданий`):*
+*Содержимое `списка заданий`:*
 
 ```py
 [
@@ -166,7 +166,7 @@ data = TManage.get_tasks_by_indexes()
 ]
 ```
 
-*После (содержимое `data`):*
+*Содержимое `data`:*
 
 ```py
 [

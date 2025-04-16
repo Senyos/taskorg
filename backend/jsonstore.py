@@ -15,7 +15,7 @@ class JSONStore():
 
         return None
 
-    def read_json(self) -> List[dict, ...]:
+    def read_json(self) -> List[dict]:
         """Reading json `file' given and
         returns json.load() -- `list' of `dicts':
         list[dict, ...]."""
@@ -24,7 +24,7 @@ class JSONStore():
             return json.load(_f)
 
     def write_json(self, 
-                   new_data: List[dict, ...]) -> None:
+                   new_data: List[dict]) -> None:
         """Writes given `new_data' list[dict, ...] 
         to `file' with replacing everything
         that was in file before. Returns None.

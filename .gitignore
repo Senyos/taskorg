@@ -4,5 +4,14 @@ app/__pycache__/
 app/backend/__pycache__/
 app/ui/__pycache__/
 app/ui/py/__pycache__/
+taskorg.dist
+taskorg.onefile-build
+taskorg.build
+taskorg.bin
+
+app/taskorg.dist
+app/taskorg.onefile-build
+app/taskorg.build
+app/taskorg.bin
 
 Agent

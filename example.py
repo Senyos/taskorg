@@ -1,10 +1,10 @@
-from backend.jsonstore import JSONStore
-from backend.taskmanage import TaskManage
+from app.backend.jsonstore import JSONStore
+from app.backend.taskmanage import TaskManage
 from random import randint
 from pprint import pprint
 import os
 
-JStore = JSONStore("./jsons/tasks.json")
+JStore = JSONStore("./app/jsons/tasks.json")
 TManage = TaskManage()
 
 

@@ -18,7 +18,7 @@ app = QtWidgets.QApplication(sys.argv)
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 
 # Файл хранения JSON
-JStore = JSONStore(".tasks.json")
+JStore = JSONStore("./tasks.json")
 TManage = TaskManage()
 
 try:

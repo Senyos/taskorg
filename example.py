@@ -1,3 +1,10 @@
+############################################################
+#                                                          #
+# A program licensed by The MIT License. 2025 DjBlooky (c) #
+#           https://github.com/Senyos/taskorg              #
+#                                                          #
+############################################################
+
 from app.backend.jsonstore import JSONStore
 from app.backend.taskmanage import TaskManage
 from random import randint

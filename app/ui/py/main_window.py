@@ -1,3 +1,10 @@
+############################################################
+#                                                          #
+# A program licensed by The MIT License. 2025 DjBlooky (c) #
+#           https://github.com/Senyos/taskorg              #
+#                                                          #
+############################################################
+
 # Form implementation generated from reading ui file 'app/ui/ui/main_window.ui'
 #
 # Created by: PyQt6 UI code generator 6.9.0

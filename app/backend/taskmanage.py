@@ -1,3 +1,10 @@
+############################################################
+#                                                          #
+# A program licensed by The MIT License. 2025 DjBlooky (c) #
+#           https://github.com/Senyos/taskorg              #
+#                                                          #
+############################################################
+
 from typing import List, Tuple
 
 class TaskManage():

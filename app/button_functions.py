@@ -111,6 +111,35 @@ def tomorrow_button():
     else:
             ui_MainWindow.t_content.setText("На завтра нет задач.")
 
+def date_button():
+    _datefilter = ui_MainWindow.t_datenote.date()
+    _date = str(_datefilter.toPyDate())
+
+    ui_MainWindow.t_title.setText(f"Заметки на дату, {_date}.")
+    ui_MainWindow.t_content.setText("")
+    
+    # Read json file
+    _data = JStore.read_json()
+
+    if _data:
+
+        TManage.set_tasks(_data)
+
+        # Get indexes of the tasks of today's day
+        _indexes = TManage.find_tasks_indexes(by="Date", value=_date)
+
+        # Save only tasks by indexes
+        TManage.save_tasks(_indexes)
+
+        # Get text pretty if task list isn't empty
+        if TManage.get_all_tasks():
+            _text = TManage.get_all_tasks_pretty()
+            ui_MainWindow.t_content.setText(_text)
+        else:
+            ui_MainWindow.t_content.setText("На эту дату нет задач.")
+    else:
+            ui_MainWindow.t_content.setText("На эту дату нет задач.")
+
 # Write button of MainWindow
 def write_note_button():
     ui_WriteWindow.t_date.setDate(date.today())

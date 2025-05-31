@@ -55,14 +55,18 @@
          </widget>
         </item>
         <item>
-         <widget class="QDateEdit" name="t_date"/>
+         <widget class="QDateEdit" name="t_date">
+          <property name="calendarPopup">
+           <bool>true</bool>
+          </property>
+         </widget>
         </item>
        </layout>
       </item>
       <item>
        <widget class="Line" name="line">
         <property name="orientation">
-         <enum>Qt::Orientation::Horizontal</enum>
+         <enum>Qt::Vertical</enum>
         </property>
        </widget>
       </item>

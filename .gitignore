@@ -4,10 +4,13 @@ app/__pycache__/
 app/backend/__pycache__/
 app/ui/__pycache__/
 app/ui/py/__pycache__/
+app/tasks.json
+app/env/
 taskorg.dist
 taskorg.onefile-build
 taskorg.build
 taskorg.bin
+taskorg.zip
 
 app/taskorg.dist
 app/taskorg.onefile-build

@@ -19,6 +19,8 @@ if __name__ == "__main__":
     ui_MainWindow.b_writenote.clicked.connect(write_note_button)
     ui_MainWindow.b_findnote.clicked.connect(find_note_button)
     ui_MainWindow.b_deletenote.clicked.connect(delete_note_button)
+    ui_MainWindow.b_datenote.clicked.connect(date_button)
+    ui_MainWindow.t_datenote.setDate(date.today())
 
     # FindWindow buttons connect
     ui_FindWindow.b_findnote.clicked.connect(find_note_filter_button)
